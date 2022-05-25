@@ -7,11 +7,11 @@ const Comments = () => {
 	const errMsg = 'Something went wrong! Try again later.'
 	const [comments, setComments] = useState()
 	const [err, setErr] = useState(false)
-	const [loading, setLoading] = useState(true)
+	const [loading, setLoading] = useState(false)
 
 	useEffect(() => {
 		getComments()
-	}, [])
+	}, [loading])
 
 	const getComments = async () => {
 		try {
