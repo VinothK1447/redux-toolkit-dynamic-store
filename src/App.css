@@ -1,0 +1,35 @@
+.App {
+	margin: 5%;
+}
+.container,
+.header,
+.content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	flex: 0 0 100%;
+}
+
+.header nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.header nav ul li {
+	float: left;
+	margin: 1rem 10rem 1rem 0;
+}
+
+.header nav ul li a {
+	font-size: 2rem;
+}
+
+.card {
+	margin: 1rem;
+	border-radius: 6px;
+	border: 1px solid #ddd;
+	width: 300px;
+	height: auto;
+	padding: 1rem;
+}
